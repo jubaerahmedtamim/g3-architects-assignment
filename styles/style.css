@@ -218,14 +218,14 @@ nav {
         align-items: center;
         justify-content: center;
         gap: 20px;
+        padding: 10px;
     }
     .exp-img img{
         width: 100%;
     }
     .experience-btn {
-        position: absolute;
-        bottom: 0;
-        right: auto;
+        position: static;
+        margin-left:20px ;
     }
 
 }
