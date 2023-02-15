@@ -29,6 +29,9 @@ header {
     border: none;
 }
 
+
+
+
 /* navbar styles here */
 nav {
     padding: 50px 240px 100px 240px;
@@ -63,11 +66,11 @@ nav {
 }
 
 .banner-details {
-    text-align: center;
     margin-bottom: 50px;
 }
 
 .banner-title {
+    text-align: center;
     font-weight: 700;
     font-size: 64px;
     color: #131313;
@@ -79,4 +82,80 @@ nav {
     font-size: 16px;
     color: #727272;
     margin-bottom: 30px;
+}
+
+/* features styles here */
+.features {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 130px;
+}
+.features-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.feature-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 25px;
+}
+
+.title-special-gray {
+    font-weight: 500;
+    font-size: 45px;
+    color: #727272;
+}
+
+.title-special-orange {
+    font-weight: 700;
+    font-size: 45px;
+    color: #FF900E;
+}
+
+
+
+
+
+
+/* media for mobile responsiveness */
+
+@media screen and (max-width: 576px) {
+
+    /* banner and navbar */
+    nav {
+        display: none;
+    }
+
+    .banner {
+        padding: 0 10px;
+    }
+
+    .banner-title {
+        text-align: start;
+        font-size: 40px;
+        color: #131313;
+        margin-bottom: 10px;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+    /* features section */
+    .features {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+        padding: 10px;
+    }
+    .features-images {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
 }
