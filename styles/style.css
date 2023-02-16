@@ -17,6 +17,7 @@ header {
 .container {
     max-width: 1600px;
     margin: 0 auto;
+    margin-bottom: 130px;
 }
 
 .primary-btn {
@@ -62,7 +63,6 @@ nav {
     align-items: center;
     justify-content: center;
     padding-bottom: 45px;
-    margin-bottom: 90px;
 }
 
 .banner-details {
@@ -171,13 +171,43 @@ nav {
 
 }
 
+/* facts section styles here */
+.facts {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.fact {
+    text-align: center;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 45px 35px;
+}
+.fact:hover{
+    background-color: rgba(255, 144, 14, 0.1);
+}
 
+.fact img {}
+
+.fact-title {
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+}
+
+.fact-info {
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+}
 
 /* media for mobile responsiveness */
 
 @media screen and (max-width: 576px) {
-
+    .container{
+        padding: 10px;
+    }
     /* banner and navbar */
     nav {
         display: none;
@@ -204,7 +234,6 @@ nav {
         align-items: center;
         justify-content: center;
         margin-bottom: 100px;
-        padding: 10px;
     }
 
     .features-images {
@@ -212,20 +241,30 @@ nav {
         grid-template-columns: repeat(1, 1fr);
         gap: 25px;
     }
+
     /* experince section */
     .works {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 20px;
-        padding: 10px;
     }
-    .exp-img img{
+
+    .exp-img img {
         width: 100%;
     }
+
     .experience-btn {
         position: static;
-        margin-left:20px ;
+        margin-left: 20px;
+    }
+    /* facts section here */
+    .facts {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .fact {
+        width: 200px;
     }
 
 }
