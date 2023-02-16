@@ -213,6 +213,12 @@ nav {
      align-items: center;
      justify-content: space-between;
 }
+/* footer here */
+.footer-content{
+    text-align: center;
+    padding: 50px 0;
+    background-color: rgba(255, 144, 14, 0.1);
+}
 
 
 /* media for mobile responsiveness */
