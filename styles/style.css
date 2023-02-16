@@ -201,6 +201,19 @@ nav {
     font-size: 20px;
     color: #727272;
 }
+/* sponsors section here */
+
+.sponsors-details{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sponsors-images {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
 
 /* media for mobile responsiveness */
 
@@ -266,5 +279,9 @@ nav {
     .fact {
         width: 200px;
     }
-
+    /* sponsors section */
+    .sponsors-images {
+        flex-direction: column;
+        gap: 30px;
+   }
 }
