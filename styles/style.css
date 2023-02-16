@@ -239,11 +239,11 @@ nav {
     .banner {
         padding: 0 10px;
     }
+    .banner-details{
 
+    }
     .banner-title {
-        text-align: start;
         font-size: 40px;
-        color: #131313;
         margin-bottom: 10px;
     }
 
